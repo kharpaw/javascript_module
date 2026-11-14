@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promting</title>
+</head>
+<body>
+    <h1 id = "printing"></h1>
+    <script>
+        'use strict';
+        let user = parseInt(prompt("Enter the year"))
+        if (user % 4 == 0 && user % 100 == 0 &&  year % 400 == 0){
+            document.querySelector("#printing").innerHTML= "It is a leap year"
+        }
+        else{
+            document.querySelector("#printing").innerHTML= "Its not a leap year"
+        }
+
+    </script>
+</body>
+</html>

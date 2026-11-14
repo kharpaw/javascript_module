@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promting</title>
+</head>
+<body>
+    <h1 id = "printing"></h1>
+    <script>
+        'use strict';
+        let user = parseInt(prompt("Enter the number"))
+        let prime_num = true;
+
+        if (user < 2){
+            prime_num = false;
+        }
+        else{
+            for(let i = 2; i < user; i++){
+                if (user % i == 0){
+                    prime_num = false;
+                }
+            }
+        }
+        if (prime_num == true){
+            document.querySelector("#printing").innerHTML= "It is a prime number"
+        }
+        else{
+            document.querySelector("#printing").innerHTML="It is not prime number"
+        }
+    </script>
+</body>
+</html>
